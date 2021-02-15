@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/functions.js"></script>
+  </head>
+  <body ><!--onload="readCookieAndCreateTable()-->"
+    <h1><%= title %></h1>
+    <form method="post" id="input-form">
+      <label for="no-of-rows">Liczba wierszy</label>
+      <input type="text" id="no-of-rows" name="no-of-rows" />
+      <label for="no-of-columns">Liczba kolumn</label>
+      <input type="text" id="no-of-columns" name="no-of-columns" />
+      <input type="submit" value="Wygeneruj" /><!--onclick="myFunctions.validateAndSaveCookie()"-->
+    </form>
+  </body>
+</html>
